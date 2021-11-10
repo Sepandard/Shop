@@ -1,0 +1,23 @@
+@import url(./assets/styles/formly.scss);
+@import "~@angular/material/theming";
+@import "./assets/styles/theme.scss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.light-theme {
+  @include angular-material-theme($light-theme);
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: rgb(249, 251, 252);
+}
+* {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
