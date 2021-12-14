@@ -1,54 +1,9 @@
-
-
-<div class="h-100 row">
-  <div class="col-xl-8">
-    <carousel 
-      style="height: 100vh"
-      [images]="images"
-      [objectFit]="'cover'"
-      [cellWidth]="'100%'"
-      [arrowsOutside]="false"
-      [autoplay]="true" 
-      [dots]="true"
-      [loop]="true"
-    >
-    </carousel>
-  </div>
-
-  <div class="col-xl-4 col-md-12 col-sm-12">
-      <h2 class="brand mt-3">{{ projectName }} </h2>
-    <div class="center ">
-      <div class="mt-8">
-
-        <h2 class="f-w">Login</h2>
-        <p class="pt-2">Don't have an account yet? Join Us</p>
-      <form class="mt-5" (ngSubmit)="onSubmit()">
-        <formly-form
-        [model]="model"
-        [fields]="fields"
-        [options]="options"
-        [form]="form"
-        ></formly-form>
-        <a class="forget-password">forget your password?</a>
-        <div class="mt-3">
-          <button
-          class="btn-login"
-          mat-flat-button
-          color="primary"
-          [disabled]="form.invalid"
-          >
-          Login Now
-        </button>
-        <button
-        class="btn-login margin-l-2"
-        mat-flat-button
-        [disabled]="form.invalid"
-        >
-        Join Us
-      </button>
-    </div>
-  </form>
-</div>
-</div>
-</div>
-</div>
+<auth-page
+  [formConfig]="pageConfig.formConfigs"
+  [pageName]="pageConfig.pageName"
+  [description]="pageConfig.description"
+  [operationText]="pageConfig.operationText"
+  [submitBtb]="pageConfig.submitBtb"
+  [cancelBtn]="pageConfig.cancelBtn"
+>
+</auth-page>
