@@ -4,7 +4,7 @@ import { AuthModule } from './auth/auth.module';
 import { FeaturesComponent } from './features.component';
 import { RouterModule } from '@angular/router';
 import { CoreModule } from '../core/core.module';
-import { FeaturesRoutingModule } from './features-routing.module';
+import { FeaturesRoutingModule } from './features.routing';
 
 @NgModule({
   declarations: [FeaturesComponent],
