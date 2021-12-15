@@ -1,0 +1,14 @@
+@use "../../../assets/styles/theme.scss" as themesColor;
+
+.brand {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  // height: 48px;
+
+}
+.toolbar{
+    position: sticky;
+    top: 0;
+    background-color: themesColor.$Dark-Blue;
+    border-radius: 6px;
+}
