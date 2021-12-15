@@ -52,7 +52,7 @@ export class LoginComponent extends auth implements OnInit {
     this.pageConfig = {
       formConfigs: this.fields,
       pageName: 'Login',
-      description: `Don't have an account yet? Join Us`,
+      description: `Welcome ${this.projectName}, Nice To meet you. Join Our Family`,
       operationText: 'forget your password?',
       submitBtb: 'Login Now',
       cancelBtn: 'Create My Account',
