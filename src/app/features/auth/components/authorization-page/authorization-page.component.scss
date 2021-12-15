@@ -22,7 +22,7 @@
 }
 .brand {
   font-family: "Poppins", sans-serif;
-  font-weight: 900;
+  font-weight: 500;
 }
 .mt-8 {
   margin-top: 8rem !important;
@@ -48,6 +48,10 @@
   background-color: #f3c331;
 }
 
+.btn-submit{
+  background-color: themesColor.$Dark-Blue;
+  border:0
+}
 .circle {
   height: 50vh;
   z-index: 2;
@@ -55,7 +59,7 @@
   width: -webkit-fill-available;
 
   &.circle-top {
-    clip-path: circle(32% at 100% 0);
+    clip-path: circle(15% at 100% 0);
     background-color: themesColor.$Dark-Blue;
     top: 0;
   }
