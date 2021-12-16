@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 
-import { AuthComponent } from './components/auth.component';
+import { AuthComponent } from './auth.component';
 import { FormlyModule } from '@ngx-formly/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -14,11 +14,15 @@ import { AuthorizationPageComponent } from './components/authorization-page/auth
 const MAT_MODULES = [MatButtonModule, MatCardModule];
 
 @NgModule({
-  declarations: [LoginComponent, RegisterComponent, AuthComponent, AuthorizationPageComponent],
+  declarations: [
+    LoginComponent,
+    RegisterComponent,
+    AuthComponent,
+    AuthorizationPageComponent,
+  ],
   imports: [
     ...MAT_MODULES,
     CommonModule,
-    IvyCarouselModule,
     AuthRoutingModule,
     FormlyModule.forChild(),
   ],

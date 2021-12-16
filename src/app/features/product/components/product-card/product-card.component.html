@@ -1,1 +1,29 @@
-<p>product-card works!</p>
+<div class="card m-1">
+  <figure>
+    <img class="d-flex product-img" [src]="product.imageUrl" />
+  </figure>
+  <div class="card-body">
+    <h1 class="card-title product-name">
+      {{ product.name }}
+      <div *ngIf="product.hasOff" class="badge mx-2 badge-color border-0">
+        {{ product.off }} %
+      </div>
+    </h1>
+
+    <div class="d-flex price">
+      <h4 class="card-title" [ngClass]="{ 'old-price-off': product.hasOff }">
+        {{ product.oldPrice }}
+      </h4>
+      <h4 *ngIf="product.hasOff" class="card-title">
+        {{ product.oldPrice }}
+      </h4>
+    </div>
+
+    <div class="justify-end card-actions">
+      <button class="btn border-0 btn-more">More info</button>
+      <button class="btn border-0 btn-add">
+        Add Cart<mat-icon>shopping_cart</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>

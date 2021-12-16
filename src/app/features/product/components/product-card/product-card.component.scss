@@ -1,0 +1,35 @@
+@use "../../../../../assets/styles/theme.scss" as themesColor;
+
+.btn-more {
+  background-color: themesColor.$Dark-Blue;
+}
+.btn-add {
+  background-color: themesColor.$Yellow;
+  color: themesColor.$Dark-Blue;
+}
+.border-0 {
+  border: 0;
+}
+.badge-color {
+  background-color: themesColor.$Yellow;
+  color: themesColor.$Dark-Blue;
+}
+.old-price-off {
+  text-decoration: line-through 2px;
+  opacity: 0.6;
+}
+.price {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.product-name {
+  justify-content: center;
+  margin-top: 0;
+}
+.product-img {
+  justify-content: center;
+  min-height: 35vh;
+  max-height: 25vh;
+  object-fit: contain;
+}

@@ -5,8 +5,18 @@ import { environment } from 'src/environments/environment';
 const routes: Routes = [
   {
     path: environment.applicationName,
-    loadChildren: () =>
-      import('./features/features.module').then((m) => m.FeaturesModule),
+    children: [
+      {
+        path: 'features',
+        loadChildren: () =>
+          import('./features/features.module').then((m) => m.FeaturesModule),
+      },
+      {
+        path: 'auth',
+        loadChildren: () =>
+          import('./auth/auth.module').then((m) => m.AuthModule),
+      },
+    ],
   },
 ];
 
