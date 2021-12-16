@@ -7,11 +7,7 @@ const routes: Routes = [
     path: '',
     component: FeaturesComponent,
     children: [
-      {
-        path: 'auth',
-        loadChildren: () =>
-          import('./auth/auth.module').then((m) => m.AuthModule),
-      },
+  
       {
         path: 'product',
         loadChildren: () =>
