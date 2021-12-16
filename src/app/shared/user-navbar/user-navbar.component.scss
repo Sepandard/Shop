@@ -3,7 +3,7 @@
 .brand {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
-  // height: 48px;
+
 
 }
 .toolbar{
@@ -11,4 +11,9 @@
     top: 0;
     background-color: themesColor.$Dark-Blue;
     border-radius: 6px;
+    z-index: 2;
+}
+.icon{
+  padding-right: 33px;
+  padding-bottom: 27px;
 }
